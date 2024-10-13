@@ -12,10 +12,8 @@ function createHomePage(contentDiv) {
   mainMessage.innerText =
     "This restaurant includes Huy's favorite food only. Check out the menu";
 
-  mainContainerDiv.appendChild(mainHeader);
-  mainContainerDiv.appendChild(mainMessage);
-  contentDiv.appendChild(restaurantBackgroundImg);
-  contentDiv.appendChild(mainContainerDiv);
+  mainContainerDiv.append(mainHeader, mainMessage);
+  contentDiv.append(restaurantBackgroundImg, mainContainerDiv);
 }
 
 export default createHomePage;
