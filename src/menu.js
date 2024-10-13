@@ -87,7 +87,16 @@ function createMenuPage(contentDiv) {
     itemPrice.classList.add("menu-item-price");
     itemPrice.innerText = item.price;
 
-    newItemDiv.append(item.imgEl, itemName, itemDescription, itemPrice);
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("menu-img-container");
+    imgContainer.append(item.imgEl);
+
+    const itemInfoContainer = document.createElement("div");
+    itemInfoContainer.classList.add("menu-item-info-container");
+
+    itemInfoContainer.append(itemName, itemDescription, itemPrice);
+
+    newItemDiv.append(imgContainer, itemInfoContainer);
     return newItemDiv;
   });
 
