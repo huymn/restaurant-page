@@ -5,7 +5,7 @@ function createAboutPage(contentDiv) {
 
   const aboutMessage = document.createElement("p");
   aboutMessage.classList.add("about-message");
-  aboutMessage =
+  aboutMessage.innerText =
     "Just a restaurant that only serves the owner's favorite food.";
 
   contentDiv.append(header, aboutMessage);
