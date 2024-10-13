@@ -2,3 +2,55 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  background-image: url("./assets/restaurant-background.jpg");
+  background-size: cover; /* Makes the background cover the screen while maintaining aspect ratio */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  background-color: #606363;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  font-size: 30px;
+  margin: 20px 30px;
+  background-color: #606363;
+  color: white;
+  cursor: pointer;
+}
+
+/**************** CSS for home page elements *******************/
+.home-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-message-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 700px;
+  background-color: rgba(96, 99, 99, 0.5);
+}
+
+.home-header {
+  font-size: 50px;
+}
+
+.home-message {
+  font-size: 20px;
+}
