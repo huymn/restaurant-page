@@ -6,8 +6,12 @@ import SteakPicture from "./assets/steak.jpg";
 import VNCoffeePicture from "./assets/vietnamese-coffee.jpg";
 
 function createMenuPage(contentDiv) {
+  const menuMainContainer = document.createElement("div");
+  menuMainContainer.classList.add("menu-main-container");
+
   // Create the header
   const header = document.createElement("h1");
+  header.classList.add("menu-header");
   header.innerText = "Menu";
 
   // Menu items
@@ -46,7 +50,7 @@ function createMenuPage(contentDiv) {
     },
     {
       name: "Pho",
-      imgEl: PhoPicture,
+      imgEl: phoImg,
       description:
         "Vietnamese beef noodle soup. Simply the best thing there is.",
       price: "$10.99",
@@ -105,7 +109,9 @@ function createMenuPage(contentDiv) {
   menuItemsContainer.classList.add("menu-items-container");
   menuItemsContainer.append(...menuItemDivs);
 
-  contentDiv.append(header, menuItemsContainer);
+  menuMainContainer.append(header, menuItemsContainer);
+
+  contentDiv.append(menuMainContainer);
 }
 
 export default createMenuPage;
