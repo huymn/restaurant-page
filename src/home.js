@@ -2,10 +2,10 @@ import restaurantBackground from "./assets/restaurant-background.jpg";
 
 function createHomePage(contentDiv) {
   const mainContainerDiv = document.createElement("div");
-  mainContainerDiv.classList.add("home-container");
+  mainContainerDiv.classList.add("home-main-container");
 
   const messageContainer = document.createElement("div");
-  messageContainer.classList.add("home-message-container");
+  messageContainer.classList.add("home-content-container");
 
   const mainHeader = document.createElement("h1");
   mainHeader.classList.add("home-header");

@@ -29,14 +29,14 @@ button {
 }
 
 /**************** CSS for home page elements *******************/
-.home-container {
+.home-main-container {
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.home-message-container {
+.home-content-container {
   color: white;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ button {
 .home-message {
   font-size: 20px;
 }
-/**************** CSS for home page elements *******************/
+/**************** CSS for home and about page elements *******************/
 
 /**************** CSS for menu page elements *******************/
 .menu-main-container {
